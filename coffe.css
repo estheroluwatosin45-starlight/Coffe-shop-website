@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: chocolate;
+}
+
+:root {
+  --latte: rgb(226, 199, 156);
+  --espresso: rgb(92, 64, 51);
+  --caramel: rgb(184, 134, 84);
+  --dark-text: rgb(51, 51, 51);
+  --light-text: rgb(245, 245, 245);
+}
+
+.line{
+    width: 120px;
+    height: 3px;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: var(--espresso);
+}
+.line1{
+    width: 120px;
+    height: 3px;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: var(--espresso);   
+}
+.title{
+    text-align: center;
+    font-size: 7vmin;
+    margin-top: 30px;
+}
+
+/* hero section starts */
+.nav-bar{
+    position: absolute;
+    margin-top: 0;
+    margin-left: 0;
+    display: flex;
+    width: 100%;
+    padding:20px;
+    justify-content:space-between;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+}
+
+.nav-link a{
+    margin: 0px 20px;
+    color: var(--espresso);
+    font-style: bold;
+}
+.nav-link a:hover{
+    border: 2px solid var(--espresso);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.logo{
+    padding-left: 70px;
+    font-style: italic;
+    color: var(--dark-text);
+}
+
+.btn{
+    background-color: var(--caramel);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.btn:hover{
+    background-color: var(--caramel);
+    color: var(--light-text);
+}
+
+.hero{
+    background-color:rgb(226, 199, 156);
+    width: 100%;
+    height: 100%;  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 100px;
+}
+
+.hero-text h2{
+    font-size: 9vmin;
+    margin-bottom:10px ;
+}
+
+.hero-text b{
+    color: saddlebrown;
+}
+
+.hero-text h5{
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+.hero-btn{
+    background-color: var(--caramel);
+    color: var(--latte);
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.hero-btn2{
+    color: var(--espresso);
+    border:1px solid var(--caramel);
+    padding: 10px;
+}
+
+.hero-btn:hover{
+    background-color: transparent;
+    border: 1px solid var(--caramel);
+    color: var(--espresso);
+}
+
+.hero-btn2:hover{    
+    color: var(--latte);
+    background-color: var(--caramel);
+}
+/* hero section ends */
+
+.about{
+    margin: 120px;
+}
+
+.about-text{       
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    box-shadow: 10px 10px 10px 10px var(--light-text, 1.0);
+    padding: 40px;
+    height: 80vh;
+    width: 60vw;
+    gap: 40px;
+}
+.about-text h1{
+    color: var(--espresso);
+    font-size: 10vmin;
+    margin-bottom: 70px;
+}
+.about-text h4{
+    font-size: 2.7vmin;
+    margin-bottom: 70px;
+}
+.about img{
+    margin-right: -250px;
+}
+
+/* menu section starts */
+.menu{
+    margin: 100px;  
+}
+
+.menu-grid{
+    padding: 40px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(4, auto) ;
+    grid-template-rows: repeat(2, auto);
+    gap: 30px;
+}
+.menu-1{
+    background-color: white;
+    box-shadow: 10px 10px 10px 10px var(--light-text, 0.904);
+    width: 250px;
+    height: 380px;
+    border-radius: 15px;
+    text-align: center;
+}
+.menu-1 img{
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.menu-1 img:hover{
+    transform: scale(0.97);
+}
+.menu-1 h3{
+    font-size: 4vmin;
+}
+.menu-1 p{
+    font-size: 2.5vmin;
+    margin-bottom: 20px;
+}
+.price{
+    margin-top: 60px;
+    padding: 5px;
+    background-color: var(--latte);
+}
+/* menu section ends */
+
+.review{
+    margin: 70px;
+    
+}
+.visit{
+    padding: 70px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.visitor{
+    padding: 7px;
+    border: 5px solid var(--espresso);
+    width: 200px;
+    text-align: center;
+}
+
+.visitor h4{
+    font-size: 2vmin;
+    padding-bottom: 30px;
+}
+.visitor h2{
+    padding-bottom: 10px;
+}
+
+.visitor img{
+    padding-bottom: 10px;
+    margin-top: -50px;
+    border-radius: 50px;
+}
+
+
+/* contact section starts */
+.contact-information{
+    padding: 30px;
+    background-color: var(--latte); 
+    height: 90vh;       
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.form h2{
+    padding-bottom: 10px;
+}
+input{
+    width: 25vw ;
+    height: 5vh;
+    padding: 10px;
+    outline: none;
+    border: none;
+    margin-bottom: 15px;
+}
+::placeholder{
+    color: var(--dark-text);
+}
+
+input:hover, textarea:hover{
+    color: var(--light-text);
+}
+
+textarea{
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+
+button{
+    width: 25vw;
+    height: 5vh ;
+    background-color: var(--espresso);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: var(--latte);
+    margin-top: 15px;
+}
+
+button:hover{
+    border: 1px solid var(--espresso);
+    background-color: var(--light-text);
+    color: var(--latte);
+    transform: scale(0.97);
+}
+
+.cont-info{
+    margin: 50px 0;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.telephone-number, .location, .working-hrs, .official-email{
+    box-shadow: 10px 10px 10px -5px rgba(223, 166, 74, 0.904);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--light-text);
+    width: 250px;
+}
+
+.telephone-number:hover, .location:hover, .working-hrs:hover, .official-email:hover{
+    transform: rotate(4deg);
+}
+
+.emoji{
+    text-align: center;
+    font-size: 4vmin;
+}
+/* contact section ends */
+
+
+/* footer section starts */
+.foot{
+    background-color: rgb(0 0 0);  
+    color: var(--light-text);
+}
+
+.footer{
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+.footer-text h1{
+    font-size: 7vmin;
+    padding-bottom: 10px;
+}
+
+.footer-text h2{
+    font-size: 2vmin;
+}
+
+.footer-link h1{
+    padding-bottom: 10px;
+}
+
+.footer-link li{
+    padding-bottom: 5px;
+}
+.footer-link a{
+    color: var(--light-text);
+}
+
+.follow i{
+    font-size: 6.5vmin;
+}
+
+.fol{
+    padding-bottom: 70px;
+    gap: 40px;
+}
+
+.follow h1{
+    padding-bottom: 10px;
+}
+
+hr{
+    margin: 30px;
+    color: var(--espresso);
+}
+.copywrite{
+    text-align: center;
+    font-size: 1.5vmin;
+    padding-bottom: 20px;
+}
+/* footer section ends */
